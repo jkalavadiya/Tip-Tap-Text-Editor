@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the editor */
+.ProseMirror {
+    outline: none !important;
+}
+
+.ProseMirror h1 {
+    @apply text-3xl font-bold mb-4 text-gray-800 dark:text-gray-100;
+}
+
+.ProseMirror h2 {
+    @apply text-2xl font-semibold mb-3 text-gray-800 dark:text-gray-100;
+}
+
+.ProseMirror h3 {
+    @apply text-xl font-medium mb-2 text-gray-800 dark:text-gray-100;
+}
+
+.ProseMirror p {
+    @apply mb-3 text-gray-700 dark:text-gray-300 leading-relaxed;
+}
+
+.ProseMirror ul {
+    @apply list-disc list-inside mb-4 space-y-1;
+}
+
+.ProseMirror ol {
+    @apply list-decimal list-inside mb-4 space-y-1;
+}
+
+.ProseMirror li {
+    @apply text-gray-700 dark:text-gray-300;
+}
+
+.ProseMirror blockquote {
+    @apply border-l-4 border-blue-500 pl-4 py-2 my-4 bg-blue-50 dark:bg-blue-900/20 italic text-gray-700 dark:text-gray-300;
+}
+
+.ProseMirror pre {
+    @apply bg-gray-100 dark:bg-gray-800 rounded-lg p-4 overflow-x-auto my-4;
+}
+
+.ProseMirror code {
+    @apply bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded text-sm font-mono text-gray-800 dark:text-gray-200;
+}
+
+.ProseMirror pre code {
+    @apply bg-transparent px-0 py-0;
+}
+
+.ProseMirror hr {
+    @apply my-6 border-t-2 border-gray-300 dark:border-gray-600;
+}
+
+.ProseMirror img {
+    @apply max-w-full h-auto rounded-lg shadow-md my-4 cursor-pointer hover:shadow-lg transition-shadow duration-200;
+}
+
+.ProseMirror a {
+    @apply text-blue-600 dark:text-blue-400 hover:underline cursor-pointer;
+}
+
+/* Focus styles */
+.ProseMirror:focus {
+    @apply outline-none;
+}
+
+/* Placeholder styles */
+.ProseMirror.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    float: left;
+    color: #adb5bd;
+    pointer-events: none;
+    height: 0;
+}
+
+/* Drag and drop styles */
+.ProseMirror-dragover {
+    @apply border-blue-500 dark:border-blue-400 border-2 bg-blue-50 dark:bg-blue-900/20;
+}
+
+/* Selection styles */
+.ProseMirror ::selection {
+    @apply bg-blue-200 dark:bg-blue-800;
+}
+
+/* Image selection styles */
+.ProseMirror img.ProseMirror-selectednode {
+    @apply ring-2 ring-blue-500 ring-opacity-50;
+}
+
+/* Link styles */
+.ProseMirror a:hover {
+    @apply bg-blue-50 dark:bg-blue-900/20 px-1 rounded;
+}
+
+/* Code block syntax highlighting placeholder */
+.ProseMirror pre {
+    position: relative;
+}
+
+.ProseMirror pre::before {
+    content: attr(data-language);
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 0.75rem;
+    color: #6b7280;
+    text-transform: uppercase;
+    font-weight: 500;
+}

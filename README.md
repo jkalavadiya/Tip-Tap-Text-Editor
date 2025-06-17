@@ -10,6 +10,7 @@ A beautiful, modern rich text editor built with [TipTap](https://tiptap.dev/), [
 
 -   [Node.js](https://nodejs.org/) (v18 or higher recommended)
 -   [npm](https://www.npmjs.com/) (comes with Node.js)
+-   React Version (18.3.1)
 
 ### Installation
 

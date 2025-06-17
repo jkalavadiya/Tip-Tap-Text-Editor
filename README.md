@@ -97,6 +97,9 @@ npm run preview
 
 ---
 
+## 🙏 Screenshot
+![TipTap-Rich-Text-Editor-06-17-2025_10_38_PM](https://github.com/user-attachments/assets/da6adfe9-6217-4f82-88cd-0929ecd77cc5)
+
 ## 📧 Contact
 
 For questions or feedback, please open an issue or contact the maintainer.

@@ -24,15 +24,15 @@
 }
 
 .ProseMirror ul {
-    @apply list-disc list-inside mb-4 space-y-1;
+    @apply list-disc pl-6 mb-4 space-y-1;
 }
 
 .ProseMirror ol {
-    @apply list-decimal list-inside mb-4 space-y-1;
+    @apply list-decimal pl-6 mb-4 space-y-1;
 }
 
 .ProseMirror li {
-    @apply text-gray-700 dark:text-gray-300;
+    @apply text-gray-700 dark:text-gray-300 leading-6;
 }
 
 .ProseMirror blockquote {
